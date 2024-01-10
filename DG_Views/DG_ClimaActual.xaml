@@ -17,9 +17,17 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label Text="Latitud" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
-        <Label Text="Longitud" Grid.Row="0" Grid.Column="1" TextColor="Black"/>
-        <Entry Grid.Row="1" Grid.Column="0" TextColor="Black"/>
-        <Entry Grid.Row="1" Grid.Column="1" TextColor="Black"/>
+        <Label Text="DG_Latitud" Grid.Row="0" Grid.Column="0" TextColor="Black"/>
+        <Label Text="DG_Longitud" Grid.Row="0" Grid.Column="1" TextColor="Black"/>
+        <Entry x:Name="DG_lat" Grid.Row="1" Grid.Column="0" TextColor="Black"/>
+        <Entry x:Name="DG_lon" Grid.Row="1" Grid.Column="1" TextColor="Black"/>
+        <Button Text="Consultar Clima" Grid.Row="2" Grid.ColumnSpan="2" Clicked="DG_Consultar_Clicked" BackgroundColor="#575757"/>
+        <Label x:Name="DG_Error" Grid.Row="3" Grid.ColumnSpan="2" FontSize="30" TextColor="Red"/>
+        <Label Text="DG_Estado del clima" Grid.Row="4" Grid.Column="0" TextColor="Black"/>
+        <Label x:Name="DG_ClimaLabel" Grid.Row="4" Grid.Column="1" TextColor="Black"/>
+        <Label Text="DG_Ciudad" Grid.Row="5" Grid.Column="0" TextColor="Black"/>
+        <Label x:Name="DG_CiudadLabel" Grid.Row="5" Grid.Column="1" TextColor="Black"/>
+        <Label Text="DG_Pais" Grid.Row="6" Grid.Column="0" TextColor="Black"/>
+        <Label x:Name="DG_PaisLabel" Grid.Row="6" Grid.Column="1" TextColor="Black"/>
     </Grid>
 </ContentPage>
