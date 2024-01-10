@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace Guerrero_EjemploAPI.DG_Model
 {
-    internal class DG_Weather
-    {
-
         public class Rootobject
         {
             public Coord coord { get; set; }
-            public Weather[] weather { get; set; }
+            public DG_Weather[] weather { get; set; }
             public string _base { get; set; }
             public Main main { get; set; }
             public int visibility { get; set; }
@@ -65,13 +62,11 @@ namespace Guerrero_EjemploAPI.DG_Model
             public int sunset { get; set; }
         }
 
-        public class Weather
+        public class DG_Weather
         {
             public int id { get; set; }
             public string main { get; set; }
             public string description { get; set; }
             public string icon { get; set; }
         }
-
-    }
 }

@@ -3,12 +3,12 @@
     x:Class="Guerrero_EjemploAPI.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Guerrero_EjemploAPI"
+    xmlns:views="clr-namespace:Guerrero_EjemploAPI.DG_Views"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate views:DG_ClimaActual}"
         Route="MainPage" />
 
 </Shell>
